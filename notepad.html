@@ -1,0 +1,187 @@
+<div class="row row-40 justify-content-center box-ordered">
+    <div class="col-md-6 col-lg-6 col-xl-4 ">
+      <!-- Services Classic-->
+      <article class="services-classic"><a class="services-classic-figure" href="single-service.html"><img
+            src="images/blog/services/services-7-420x320.jpg" alt="" class="img-fluid" /></a>
+        <div class="services-classic-caption">
+          <div class="unit unit-spacing-md align-items-lg-center">
+            <div class="unit-left"><span class="services-classic-counter box-ordered-item"></span></div>
+            <div class="unit-body">
+              <h5 class="services-classic-title"><a href="single-service.html">Fabrication</a></h5>
+              <p class="services-classic-text">Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-6 col-xl-4 ">
+      <!-- Services Classic-->
+      <article class="services-classic"><a class="services-classic-figure" href="single-service.html"><img
+            src="images/blog/services/services-8-420x320.jpg" alt="" class="img-fluid" /></a>
+        <div class="services-classic-caption">
+          <div class="unit unit-spacing-md align-items-lg-center">
+            <div class="unit-left"><span class="services-classic-counter box-ordered-item"></span></div>
+            <div class="unit-body">
+              <h5 class="services-classic-title"><a href="single-service.html">Steel Cladding</a></h5>
+              <p class="services-classic-text">A falsis, deus superbus ausus.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-6 col-xl-4 ">
+      <!-- Services Classic-->
+      <article class="services-classic"><a class="services-classic-figure" href="single-service.html"><img
+            src="images/blog/services/services-9-420x320.jpg" alt="" class="img-fluid" /></a>
+        <div class="services-classic-caption">
+          <div class="unit unit-spacing-md align-items-lg-center">
+            <div class="unit-left"><span class="services-classic-counter box-ordered-item"></span></div>
+            <div class="unit-body">
+              <h5 class="services-classic-title"><a href="single-service.html">Steel Detailing</a></h5>
+              <p class="services-classic-text">Terrors assimilant, tanquam.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-6 col-xl-4">
+      <!-- Services Classic-->
+      <article class="services-classic"><a class="services-classic-figure" href="single-service.html"><img
+            src="images/blog/services/services-10-420x320.jpg" alt="" class="img-fluid" /></a>
+        <div class="services-classic-caption">
+          <div class="unit unit-spacing-md align-items-lg-center">
+            <div class="unit-left"><span class="services-classic-counter box-ordered-item"></span></div>
+            <div class="unit-body">
+              <h5 class="services-classic-title"><a href="single-service.html">Construction</a></h5>
+              <p class="services-classic-text">A falsis, gallus alter barcas.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-6 col-xl-4">
+      <!-- Services Classic-->
+      <article class="services-classic"><a class="services-classic-figure" href="single-service.html"><img
+            src="images/blog/services/services-11-420x320.jpg" alt="" class="img-fluid" /></a>
+        <div class="services-classic-caption">
+          <div class="unit unit-spacing-md align-items-lg-center">
+            <div class="unit-left"><span class="services-classic-counter box-ordered-item"></span></div>
+            <div class="unit-body">
+              <h5 class="services-classic-title"><a href="single-service.html">Engineering</a></h5>
+              <p class="services-classic-text">A falsis, cobaltum fortis cacula.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="col-md-6 col-lg-5 col-xl-4 ">
+      <!-- Services Classic-->
+      <article class="services-classic"><a class="services-classic-figure" href="single-service.html"><img
+            src="images/blog/services/services-11-420x320.jpg" alt="" class="img-fluid" /></a>
+        <div class="services-classic-caption">
+          <div class="unit unit-spacing-md align-items-lg-center">
+            <div class="unit-left"><span class="services-classic-counter box-ordered-item"></span></div>
+            <div class="unit-body">
+              <h5 class="services-classic-title"><a href="single-service.html">Laser Cutting</a></h5>
+              <p class="services-classic-text">A falsis, cannabis velox coord.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+
+  <script>let filters = document.querySelectorAll(".nav-link");
+    let projects = document.querySelectorAll(".project");
+
+    for (var link of filters) {
+      link.addEventListener("click", filterProjects);
+    }
+
+    function filterProjects(e) {
+      e.preventDefault();
+
+      for (let eachFilter of filters) {
+        eachFilter.classList.remove('active');
+      }
+
+      let filter = this.dataset.filter;
+      this.classList.add("active");
+
+      for (var project of projects) {
+        if (filter == "all") {
+          project.style.display = "block";
+        } else if (project.classList.contains(filter)) {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      }
+    }
+  </script>
+
+
+
+
+
+
+
+  <!-- call by section -->
+  <section>
+    <div class="innerContent-wrap serviceWrp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="title">
+              <h1><span>Categories</span></h1>
+            </div>
+            <ul class="catewrap">
+              <li><a href="#">Chemical Research</a></li>
+              <li><a href="#" class="active">Mechanical Enginnering</a></li>
+              <li><a href="#">Material Engineering</a></li>
+              <li><a href="#">Agriculture Processing</a></li>
+              <li><a href="#">Petroleum and Gas</a></li>
+              <li><a href="#">Power and Energy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-8">
+            <div class="service_delImg"><img src="images/service_blog.jpg"></div>
+            <h3>Agriculture Processing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu nulla vulputate, varius metus a,
+              hendrerit justo. Quisque ac rhoncus metus. Nulla sit amet lorem semper, dictum risus vitae, pellentesque
+              metus. Pellentesque ac ornare ex. Vestibulum hendrerit tempus velit, in tincidunt est convallis sit amet.
+              Morbi malesuada condimentum leo ac venenatis. Integer vehicula non orci nec dictum. Nulla facilisi. Nulla
+              facilisi. Nunc eget eros vitae lectus gravida convallis. Duis auctor malesuada dolor ac vehicula. Sed at
+              enim nec urna egestas pellentesque ut a eros. Morbi id nunc vitae leo tempor vulputate. Vivamus posuere
+              varius tellus vel rutrum.</p>
+            <h3>How We Work?</h3>
+            <p>Duis magna urna, bibendum et ornare nec, interdum sit amet orci. Sed feugiat nisl eget ex ultricies
+              fermentum. Phasellus ut ipsum vitae sapien vulputate semper. Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Vivamus finibus rhoncus ante, in maximus
+              libero. Fusce fermentum lacus purus, sed lobortis leo faucibus sit amet. Morbi ut posuere nisl.
+              Pellentesque tincidunt magna ultrices venenatis sagittis.</p>
+            <div class="row">
+              <div class="col-lg-7">
+                <h3>Why Choose Us</h3>
+                <p>Nulla ex quam, faucibus et rhoncus sit amet, sagittis in diam. Aenean ligula eros, viverra vitae
+                  felis non, iaculis pellentesque odio. Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Etiam non diam vitae ante fringilla ultricies at sed felis. Nam
+                  eget consectetur dolor.</p>
+                <ul class="list-service">
+                  <li>Nunc ut dictum diam at eleifend nibh</li>
+                  <li>Quisque sit amet ex sit amet metus tempus ornare</li>
+                  <li>Vestibulum massa lacus, porttitor non tortor quis</li>
+                  <li>Maecenas at iaculis eros in gravida semper malesuada</li>
+                  <li>Aliquam dignissim dui at aliquam efficitur</li>
+                </ul>
+              </div>
+              <div class="col-lg-5">
+                <div class="serviceImg"><img src="images/service_blog01.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
